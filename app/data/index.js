@@ -1,10 +1,12 @@
-import populate from './dataGenerator'
-import users from './raw/users'
-import articles from './raw/articles'
-import notifications from './raw/notifications'
-import conversations from './raw/conversations'
-import cards from './raw/cards'
-import _ from 'lodash'
+import populate from './dataGenerator';
+import users from './raw/users';
+import articles from './raw/articles';
+import companies from './raw/companies';
+import educational from './raw/educationalArticles';
+import notifications from './raw/notifications';
+import conversations from './raw/conversations';
+import cards from './raw/cards';
+import _ from 'lodash';
 
 class DataProvider {
 
@@ -24,8 +26,15 @@ class DataProvider {
     return _.filter(articles, x => x.type == type);
   }
 
+  getEducationalArticles(type = 'educational') {
+    return _.filter(educational, x => x.type == type);
+  }
+
   getGoods(type = 'goods') {
     return _.filter(articles, x => x.type == type);
+  }
+  getCompanies(type = 'company') {
+    return _.filter(companies, x => x.type == type);
   }
 
   getArticle(id) {

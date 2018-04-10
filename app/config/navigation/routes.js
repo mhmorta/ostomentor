@@ -71,71 +71,24 @@ export const MainRoutes = [
     renderable: true,
     children: [
       {
-        id: 'EdWt',
-        title: 'Materials',
-        screen: Screens.WalkthroughScreen,
+        id: 'EdArt',
+        title: 'Educational Articles',
+        screen: Screens.EducationalArticles,
         renderable: true,
         children: []
       },
-      {
-        id: 'Articles1',
-        title: 'Article List V1',
-        screen: Screens.Articles1,
-        renderable: true,
-        children: []
-      },
-      {
-        id: 'Articles2',
-        title: 'Article List V2',
-        screen: Screens.Articles2,
-        renderable: true,
-        children: []
-      },
-      {
-        id: 'Articles3',
-        title: 'Article List V3',
-        screen: Screens.Articles3,
-        renderable: true,
-        children: []
-      },
-      {
-        id: 'Articles4',
-        title: 'Article List V4',
-        screen: Screens.Articles4,
-        renderable: true,
-        children: []
-      },
-      {
-        id: 'Blogposts',
-        title: 'Blogposts',
-        screen: Screens.Blogposts,
-        renderable: true,
-        children: []
-      },
-      {
-        id: 'Article',
-        title: 'Article View',
-        screen: Screens.Article,
-        renderable: true,
-        children: []
-      },
+
     ]
   },
   {
     id: 'MessagingMenu',
     title: 'Messaging',
     icon: FontIcons.mail,
-    screen: Screens.MessagingMenu,
-    //screen: Screens.ChatList,
+    // screen: Screens.MessagingMenu,
+    screen: Screens.ChatList,
     renderable: true,
     children: [
-      {
-        id: 'Chat',
-        title: 'Chat',
-        screen: Screens.Chat,
-        renderable: false,
-        children: []
-      },
+
       {
         id: 'ChatList',
         title: 'Chat List',
@@ -190,9 +143,9 @@ export const MainRoutes = [
     renderable: true,
     children: [
       {
-        id: 'ShoppingArticle',
-        title: 'Stoma suplies list',
-        screen: Screens.ShoppingArticle,
+        id: 'StomaCompanies',
+        title: 'Stoma suplies companies',
+        screen: Screens.StomaCompanies,
         renderable: true,
         children: []
       },
@@ -282,6 +235,7 @@ export const MainRoutes = [
         children: []
       }
     ]
+  
   },
   {
     id: 'Trash',
@@ -336,6 +290,62 @@ export const MainRoutes = [
         id: 'Feed',
         title: 'Feed',
         screen: Screens.Feed,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'Chat',
+        title: 'Chat',
+        screen: Screens.Chat,
+        renderable: false,
+        children: []
+      },
+      {
+        id: 'Articles1',
+        title: 'Article List V1',
+        screen: Screens.Articles1,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'Articles2',
+        title: 'Article List V2',
+        screen: Screens.Articles2,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'Articles3',
+        title: 'Article List V3',
+        screen: Screens.Articles3,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'Articles4',
+        title: 'Article List V4',
+        screen: Screens.Articles4,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'Blogposts',
+        title: 'Blogposts',
+        screen: Screens.Blogposts,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'Article',
+        title: 'Article View',
+        screen: Screens.Article,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'ShoppingArticle',
+        title: 'Stoma suplies list',
+        screen: Screens.ShoppingArticle,
         renderable: true,
         children: []
       },

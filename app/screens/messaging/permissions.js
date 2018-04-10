@@ -23,7 +23,7 @@ import { scale, scaleModerate, scaleVertical } from '../../utils/scale';
 
 export class Permissions extends React.Component {
   static navigationOptions = {
-    title: 'Permissions'.toUpperCase()
+    title: 'Manage Permissions'.toUpperCase()
   };
 
   constructor(props) {
@@ -86,8 +86,7 @@ export class Permissions extends React.Component {
     let name = `${info.item.withUser.firstName} ${info.item.withUser.lastName}`;
     let last = info.item.messages[info.item.messages.length - 1];
     return (
-      <TouchableOpacity onPress={() =>  { this._setModalVisible(true);
-                                         }  }>
+      <TouchableOpacity>
         <View style={styles.container}>
           <Avatar rkType='circle' style={styles.avatar} img={info.item.withUser.photo} />
           <View style={styles.content}>
@@ -99,9 +98,9 @@ export class Permissions extends React.Component {
               <RkSwitch style={styles.switch}
                 value={this.state.sendPush}
                 name="Push"
-                onPress={
-                  () => this._setModalVisible(true) 
-                }
+                // onPress={
+                //   () => this._setModalVisible(true) 
+                // }
                 onValueChange={(sendPush) => {
                   this.setState({ sendPush });
                 }} />

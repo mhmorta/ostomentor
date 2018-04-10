@@ -6,3 +6,5 @@ export * from './blogposts';
 export * from './article';
 export * from './shoppingItem';
 export * from './shoppingArticle';
+export * from './educationalArticles';
+

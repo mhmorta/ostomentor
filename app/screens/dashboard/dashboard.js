@@ -79,9 +79,9 @@ export class Dashboard extends React.Component {
         <View style={chartBlockStyles}>
           <AreaChart/>
         </View>
-        <View style={chartBlockStyles}>
+        {/* <View style={chartBlockStyles}>
           <ProgressChart/>
-        </View>
+        </View> */}
         <View style={chartBlockStyles}>
           <AreaSmoothedChart/>
         </View>
