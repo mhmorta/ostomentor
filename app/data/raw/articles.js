@@ -204,6 +204,26 @@ const articles = [{
   'text': 'It is for colostomy patients to wear on the abdominal stoma to fix bag and prevent parastomal hernia and hernia',
   'comments': []
 }
+,
+{
+  'id': 20,
+  'photo': require('../img/correct.png'),
+  'type': 'article',
+  'time': -6500,
+  'header': 'Correct',
+  'text': 'Great! take 2mg now. ( Do not exceed 16 mg per day)',
+  'comments': []
+}
+,
+{
+  'id': 21,
+  'photo': require('../img/incorrect.png'),
+  'type': 'article',
+  'time': -6500,
+  'header': 'Incorrect',
+  'text': 'Unfortunately, you choose wrong answer; 2mg was correct. ',
+  'comments': []
+}
 ];
 
 export default articles;

@@ -66,8 +66,35 @@ export class DataEntry extends React.Component {
                   onChangeText={(stomaOutput) => this.setState({ stomaOutput })}
                   value={this.state.stomaOutput} />
               </View>
+              <View style={styles.row}>
+              <RkText rkType='header6'>Metamucil</RkText>
+              <RkSwitch style={styles.switch}
+                value={this.state.metamucil}
+                name="Metamucil"
+                onValueChange={(metamucil) => this.setState({ metamucil })} />
+              <RkText rkType='header6'>Loperamide</RkText>
+              <RkSwitch style={styles.switch}
+                value={this.state.loperamide}
+                name="Loperamide"
+                onValueChange={(metamucil) => this.setState({ loperamide })} />
+              <RkText rkType='header6'>Lomotil</RkText>
+              <RkSwitch style={styles.switch}
+                value={this.state.lomotil}
+                name="Lomotil"
+                onValueChange={(lomotil) => this.setState({ lomotil })} />
+            </View>
 
+            <View style={[styles.content]}>
+              <View style={[styles.textRow]}>
+                <RkText rkType='subtitle'>Enter dose taken last 24 hours:</RkText>
+              </View>
+              <RkTextInput rkType='rounded'
+                onChangeText={(nameOnCard) => this.setState({ nameOnCard })}
+                value={this.state.nameOnCard} />
+            </View>
               <View style={[styles.content]}>
+
+              
                 <View style={[styles.textRow]}>
                   <RkText rkType='subtitle'>Date</RkText>
                 </View>
@@ -109,34 +136,9 @@ export class DataEntry extends React.Component {
 
 
 
-            <View style={styles.row}>
-              <RkText rkType='header6'>Metamucil</RkText>
-              <RkSwitch style={styles.switch}
-                value={this.state.metamucil}
-                name="Metamucil"
-                onValueChange={(metamucil) => this.setState({ metamucil })} />
-              <RkText rkType='header6'>Loperamide</RkText>
-              <RkSwitch style={styles.switch}
-                value={this.state.loperamide}
-                name="Loperamide"
-                onValueChange={(metamucil) => this.setState({ loperamide })} />
-              <RkText rkType='header6'>Lomotil</RkText>
-              <RkSwitch style={styles.switch}
-                value={this.state.lomotil}
-                name="Lomotil"
-                onValueChange={(lomotil) => this.setState({ lomotil })} />
-            </View>
 
-            <View style={[styles.content]}>
-              <View style={[styles.textRow]}>
-                <RkText rkType='subtitle'>Name On Card</RkText>
-              </View>
-              <RkTextInput rkType='rounded'
-                onChangeText={(nameOnCard) => this.setState({ nameOnCard })}
-                value={this.state.nameOnCard} />
-            </View>
 
-            <View style={[styles.content]}>
+            {/* <View style={[styles.content]}>
               <View style={[styles.textRow]}>
                 <RkText rkType='subtitle'>Card Code</RkText>
               </View>
@@ -144,12 +146,12 @@ export class DataEntry extends React.Component {
                 keyboardType='numeric'
                 onChangeText={(cardCode) => this.setState({ cardCode })}
                 value={this.state.cardCode} />
-            </View>
+            </View> */}
           </View>
         </ScrollView>
         <View>
-          <GradientButton rkType='large' text='ADD TO CARD' onPress={() => {
-            this.props.navigation.goBack()
+          <GradientButton rkType='large' text='Store data' onPress={() => {
+            this.props.navigation.navigate('Quiz');
           }} />
         </View>
 

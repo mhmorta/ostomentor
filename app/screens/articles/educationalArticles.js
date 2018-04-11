@@ -34,7 +34,7 @@ export class EducationalArticles extends React.Component {
       <TouchableOpacity
         delayPressIn={70}
         activeOpacity={0.8}
-        onPress={() => this.props.navigation.navigate('Article', {id: info.item.id})}>
+        onPress={() => this.props.navigation.navigate('EdArticle', {id: info.item.id})}>
         <RkCard rkType='imgBlock' style={styles.card}>
           <Image rkCardImg source={info.item.photo}/>
 

@@ -10,7 +10,7 @@ import _ from 'lodash';
 
 class DataProvider {
 
-  getUser(id = 1) {
+  getUser(id = 2) {
     return _.find(users, x => x.id == id);
   }
 
@@ -39,6 +39,10 @@ class DataProvider {
 
   getArticle(id) {
     return _.find(articles, x => x.id == id);
+  }
+
+  getEducationalArticle(id) {
+    return _.find(educational, x => x.id == id);
   }
 
 

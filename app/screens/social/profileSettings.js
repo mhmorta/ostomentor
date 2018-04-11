@@ -112,7 +112,7 @@ export class ProfileSettings extends React.Component {
             </View>
           </View>
 
-          <View style={styles.section}>
+          {/* <View style={styles.section}>
             <View style={[styles.row, styles.heading]}>
               <RkText rkType='primary header6'>CONNECT YOUR ACCOUNT</RkText>
             </View>
@@ -125,8 +125,10 @@ export class ProfileSettings extends React.Component {
             <View style={styles.row}>
               <SocialSetting name='Facebook' icon={FontAwesome.facebook} tintColor={RkTheme.current.colors.facebook}/>
             </View>
-          </View>
-          <GradientButton rkType='large' style={styles.button} text='SAVE'/>
+          </View> */}
+          <GradientButton rkType='large' style={styles.button} text='SAVE'  onPress={() => {
+            this.props.navigation.goBack()
+          }}/>
         </RkAvoidKeyboard>
       </ScrollView>
     )

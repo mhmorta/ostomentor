@@ -85,6 +85,7 @@ export class Permissions extends React.Component {
   _renderItem(info) {
     let name = `${info.item.withUser.firstName} ${info.item.withUser.lastName}`;
     let last = info.item.messages[info.item.messages.length - 1];
+    let chance = Math.random() >= 0.5;
     return (
       <TouchableOpacity>
         <View style={styles.container}>
@@ -96,7 +97,7 @@ export class Permissions extends React.Component {
                 {moment().add(last.time, 'seconds').format('LT')}
               </RkText> */}
               <RkSwitch style={styles.switch}
-                value={this.state.sendPush}
+                value={chance}
                 name="Push"
                 // onPress={
                 //   () => this._setModalVisible(true) 

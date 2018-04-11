@@ -7,4 +7,5 @@ export * from './article';
 export * from './shoppingItem';
 export * from './shoppingArticle';
 export * from './educationalArticles';
-
+export * from './edArticle';
+export * from './SuccessFailure';

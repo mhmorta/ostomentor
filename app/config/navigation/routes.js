@@ -42,7 +42,7 @@ export const MainRoutes = [
   },
   {
     id: 'SocialMenu',
-    title: 'User profile',
+    title: 'User Profile',
     icon: FontIcons.profile,
     screen: Screens.SocialMenu,
     renderable: true,
@@ -67,16 +67,17 @@ export const MainRoutes = [
     id: 'ArticlesMenu',
     title: 'Articles',
     icon: FontIcons.article,
-    screen: Screens.ArticleMenu,
+    // screen: Screens.ArticleMenu,
+    screen: Screens.EducationalArticles,
     renderable: true,
     children: [
-      {
-        id: 'EdArt',
-        title: 'Educational Articles',
-        screen: Screens.EducationalArticles,
-        renderable: true,
-        children: []
-      },
+      // {
+      //   id: 'EdArt',
+      //   title: 'Educational Articles',
+      //   screen: Screens.EducationalArticles,
+      //   renderable: true,
+      //   children: []
+      // },
 
     ]
   },
@@ -113,6 +114,7 @@ export const MainRoutes = [
       renderable: true,
       children: []
     },
+
     {
       id: 'DataEntry',
       title: 'Enter Data',
@@ -144,7 +146,7 @@ export const MainRoutes = [
     children: [
       {
         id: 'StomaCompanies',
-        title: 'Stoma suplies companies',
+        title: 'Stoma Supply Companies',
         screen: Screens.StomaCompanies,
         renderable: true,
         children: []
@@ -177,7 +179,7 @@ export const MainRoutes = [
     children: [
       {
         id: 'ShoppingItem',
-        title: 'Supply item',
+        title: 'Supply Item',
         screen: Screens.ShoppingItem,
         renderable: false,
         children: []
@@ -337,15 +339,36 @@ export const MainRoutes = [
       },
       {
         id: 'Article',
-        title: 'Article View',
+        title: 'Article',
         screen: Screens.Article,
         renderable: true,
         children: []
       },
       {
+        id: 'EdArticle',
+        title: 'Article',
+        screen: Screens.EdArticle,
+        renderable: true,
+        children: []
+      },
+      {
         id: 'ShoppingArticle',
-        title: 'Stoma suplies list',
+        title: 'Stoma Supplies list',
         screen: Screens.ShoppingArticle,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'Quiz',
+        title: 'Quiz',
+        screen: Screens.Quiz,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'SucessFailure',
+        title: 'Result...',
+        screen: Screens.SuccessFailure,
         renderable: true,
         children: []
       },
