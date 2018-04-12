@@ -220,7 +220,7 @@ export const MainRoutes = [
     title: 'Themes',
     icon: FontIcons.theme,
     screen: Screens.Themes,
-    renderable: false,
+    renderable: true,
     children: []
   },
   {

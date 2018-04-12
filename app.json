@@ -2,7 +2,7 @@
   "expo": {
     "name": "Ostomentor",
     "slug": "ostomentor",
-    "githubUrl": "https://github.com/akveo/kittenTricks",
+    "githubUrl": "",
     "sdkVersion": "24.0.0",
     "icon": "./icon2.png",
     "orientation": "portrait",

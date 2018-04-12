@@ -3,8 +3,12 @@ import {
   ScrollView,
   View,
   TouchableOpacity,
-  StyleSheet
+  StyleSheet,
+  
 } from 'react-native';
+import { KittenApp } from '../../app';
+import {NavigationActions} from 'react-navigation';
+
 import {
   RkText,
   RkStyleSheet,
@@ -34,6 +38,10 @@ export class Settings extends React.Component {
   }
 
   render() {
+    let toHome = NavigationActions.reset({
+      index: 0,
+      actions: [NavigationActions.navigate({ routeName: 'Walkthrough2'})]
+    });
     return (
       <ScrollView style={styles.container}>
         <View style={styles.section}>
@@ -110,7 +118,11 @@ export class Settings extends React.Component {
             </TouchableOpacity>
           </View>
           <View style={styles.row}>
-            <TouchableOpacity style={styles.rowButton}>
+            <TouchableOpacity
+             style={styles.rowButton} 
+            onPress={() => 
+              this.props.navigation.dispatch(toHome)}
+            >
               <RkText rkType='header6'>Logout</RkText>
             </TouchableOpacity>
           </View>
@@ -119,6 +131,7 @@ export class Settings extends React.Component {
     )
   }
 }
+
 
 let styles = RkStyleSheet.create(theme => ({
   container: {
