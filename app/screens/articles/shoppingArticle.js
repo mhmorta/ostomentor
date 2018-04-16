@@ -9,8 +9,8 @@ import {
   RkText,
   RkCard, RkStyleSheet
 } from 'react-native-ui-kitten';
-import {SocialBar} from '../../components';
-import {data} from '../../data';
+import { SocialBar } from '../../components';
+import { data } from '../../data';
 let moment = require('moment');
 
 export class ShoppingArticle extends React.Component {
@@ -31,18 +31,32 @@ export class ShoppingArticle extends React.Component {
 
   _renderItem(info) {
     return (
+      // <TouchableOpacity
+      //   delayPressIn={70}
+      //   activeOpacity={0.8}
+      //   onPress={() => this.props.navigation.navigate('ShoppingItem', { id: info.item.id })}>
+      //   <RkCard rkType='backImg'>
+      //     <Image rkCardImg source={info.item.photo} />
+      //     <View rkCardImgOverlay rkCardContent style={styles.overlay}>
+      //       <RkText rkType='header2 inverseColor'>{info.item.header}</RkText>
+      //       <RkText rkType='secondary2 inverseColor'>{moment().add(info.item.time, 'seconds').fromNow()}</RkText>
+      //       <View rkCardFooter style={styles.footer}>
+      //         <SocialBar rkType='leftAligned' />
+      //       </View >
+      //     </View>
+      //   </RkCard>
+      // </TouchableOpacity>
+
       <TouchableOpacity
         delayPressIn={70}
         activeOpacity={0.8}
-        onPress={() => this.props.navigation.navigate('ShoppingItem', {id: info.item.id})}>
-        <RkCard rkType='backImg'>
-          <Image rkCardImg source={info.item.photo}/>
+        onPress={() => this.props.navigation.navigate('ShoppingItem', { id: info.item.id })}>
+        <RkCard rkType='imgBlock' style={styles.card}>
+          <Image rkCardImg source={info.item.photo} />
           <View rkCardImgOverlay rkCardContent style={styles.overlay}>
-            <RkText rkType='header2 inverseColor'>{info.item.header}</RkText>
-            <RkText rkType='secondary2 inverseColor'>{moment().add(info.item.time, 'seconds').fromNow()}</RkText>
-            {/* <View rkCardFooter style={styles.footer}>
-              <SocialBar rkType='leftAligned'/>
-            </View > */}
+            <RkText rkType='header4 inverseColor'>{info.item.header}</RkText>
+            {/* <RkText style={styles.time}
+            rkType='secondary2 inverseColor'>{moment().add(info.item.time, 'seconds').fromNow()}</RkText> */}
           </View>
         </RkCard>
       </TouchableOpacity>
@@ -54,9 +68,9 @@ export class ShoppingArticle extends React.Component {
     info.item = this.data[0];
     return (
       <FlatList data={this.data}
-                renderItem={this.renderItem}
-                keyExtractor={this._keyExtractor}
-                style={styles.root}/>
+        renderItem={this.renderItem}
+        keyExtractor={this._keyExtractor}
+        style={styles.root} />
 
     )
   }

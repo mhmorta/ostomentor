@@ -5,62 +5,11 @@ import _ from 'lodash';
 export const MainRoutes = [
   {
     id: 'LoginMenu',
-    title: 'Auth',
-    icon: FontIcons.login,
-    screen: Screens.LoginMenu,
-    renderable: false,
-    children: [
-      {
-        id: 'Login1',
-        title: 'Login V1',
-        screen: Screens.LoginV1,
-        renderable: true,
-        children: []
-      },
-      {
-        id: 'Login2',
-        title: 'Login V2',
-        screen: Screens.LoginV2,
-        renderable: true,
-        children: []
-      },
-      {
-        id: 'SignUp',
-        title: 'Sign Up',
-        screen: Screens.SignUp,
-        renderable: true,
-        children: []
-      },
-      {
-        id: 'password',
-        title: 'Password Recovery',
-        screen: Screens.PasswordRecovery,
-        renderable: true,
-        children: []
-      },
-    ]
-  },
-  {
-    id: 'SocialMenu',
-    title: 'User Profile',
+    title: 'Forum',
     icon: FontIcons.profile,
-    screen: Screens.SocialMenu,
+    screen: Screens.Forum,
     renderable: true,
     children: [
-      {
-        id: 'ProfileSettings',
-        title: 'Profile Settings',
-        screen: Screens.ProfileSettings,
-        renderable: true,
-        children: []
-      },
-      {
-        id: 'Permissions',
-        title: 'Permissions',
-        screen: Screens.Permissions,
-        renderable: true,
-        children: []
-      },
     ]
   },
   {
@@ -71,15 +20,28 @@ export const MainRoutes = [
     screen: Screens.EducationalArticles,
     renderable: true,
     children: [
-      // {
-      //   id: 'EdArt',
-      //   title: 'Educational Articles',
-      //   screen: Screens.EducationalArticles,
-      //   renderable: true,
-      //   children: []
-      // },
-
     ]
+  },
+  {
+    id: 'DashboardsMenu',
+    title: 'Dashboards',
+    icon: FontIcons.dashboard,
+    screen: Screens.DashboardMenu,
+    renderable: true,
+    children: [{
+      id: 'Dashboard',
+      title: 'Dashboard',
+      screen: Screens.Dashboard,
+      renderable: true,
+      children: []
+    },
+    {
+      id: 'DataEntry',
+      title: 'Enter Data',
+      screen: Screens.DataEntry,
+      renderable: true,
+      children: []
+    }]
   },
   {
     id: 'MessagingMenu',
@@ -100,42 +62,6 @@ export const MainRoutes = [
 
 
     ]
-  },
-  {
-    id: 'DashboardsMenu',
-    title: 'Dashboards',
-    icon: FontIcons.dashboard,
-    screen: Screens.DashboardMenu,
-    renderable: true,
-    children: [{
-      id: 'Dashboard',
-      title: 'Dashboard',
-      screen: Screens.Dashboard,
-      renderable: true,
-      children: []
-    },
-
-    {
-      id: 'DataEntry',
-      title: 'Enter Data',
-      screen: Screens.DataEntry,
-      renderable: true,
-      children: []
-    }]
-  },
-  {
-    id: 'WalkthroughMenu',
-    title: 'Walkthroughs',
-    icon: FontIcons.mobile,
-    screen: Screens.WalkthroughMenu,
-    renderable: false,
-    children: [{
-      id: 'Walkthrough',
-      title: 'Walkthrough',
-      screen: Screens.WalkthroughScreen,
-      renderable: true,
-      children: []
-    }]
   },
   {
     id: 'EcommerceMenu',
@@ -169,6 +95,43 @@ export const MainRoutes = [
       },
 
     ]
+  },
+  {
+    id: 'SocialMenu',
+    title: 'User Profile',
+    icon: FontIcons.login,
+    screen: Screens.SocialMenu,
+    renderable: true,
+    children: [
+      {
+        id: 'ProfileSettings',
+        title: 'Profile Settings',
+        screen: Screens.ProfileSettings,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'Permissions',
+        title: 'Permissions',
+        screen: Screens.Permissions,
+        renderable: true,
+        children: []
+      },
+    ]
+  },
+  {
+    id: 'WalkthroughMenu',
+    title: 'Walkthroughs',
+    icon: FontIcons.mobile,
+    screen: Screens.WalkthroughMenu,
+    renderable: false,
+    children: [{
+      id: 'Walkthrough',
+      title: 'Walkthrough',
+      screen: Screens.WalkthroughScreen,
+      renderable: true,
+      children: []
+    }]
   },
   {
     id: 'NavigationMenu',
@@ -369,6 +332,34 @@ export const MainRoutes = [
         id: 'SucessFailure',
         title: 'Result...',
         screen: Screens.SuccessFailure,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'Login1',
+        title: 'Login V1',
+        screen: Screens.LoginV1,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'Login2',
+        title: 'Login V2',
+        screen: Screens.LoginV2,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'SignUp',
+        title: 'Sign Up',
+        screen: Screens.SignUp,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'password',
+        title: 'Password Recovery',
+        screen: Screens.PasswordRecovery,
         renderable: true,
         children: []
       },

@@ -9,3 +9,5 @@ export * from './shoppingArticle';
 export * from './educationalArticles';
 export * from './edArticle';
 export * from './SuccessFailure';
+export * from './forum';
+

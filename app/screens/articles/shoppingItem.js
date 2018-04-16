@@ -32,6 +32,17 @@ export class ShoppingItem extends React.Component {
   render() {
     return (
       <ScrollView style={styles.root}>
+      {/* <RkCard rkType='backImg'>
+          <Image rkCardImg source={info.item.photo}/>
+          <View rkCardImgOverlay rkCardContent style={styles.overlay}>
+            <RkText rkType='header2 inverseColor'>{info.item.header}</RkText>
+            <RkText rkType='secondary2 inverseColor'>{moment().add(info.item.time, 'seconds').fromNow()}</RkText>
+            <View rkCardFooter style={styles.footer}>
+              <SocialBar rkType='leftAligned'/>
+            </View >
+          </View>
+        </RkCard> */}
+
         <RkCard rkType='article'>
           <Image rkCardImg source={this.data.photo}/>
           <View rkCardHeader>

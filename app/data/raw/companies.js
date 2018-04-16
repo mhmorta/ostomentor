@@ -10,7 +10,7 @@ const companies = [
   },
   {
     id: 2,
-    photo: require('../img/convatec.jpg'),
+    photo: require('../img/convatec.png'),
     type: 'company',
     time: -1373,
     header: 'Convatec',

@@ -11,8 +11,9 @@ import {
   RkStyleSheet
 } from 'react-native-ui-kitten';
 import {data} from '../../data';
-import {Avatar} from '../../components';
-import {SocialBar} from '../../components';
+import { SocialBar } from '../../components';
+import { GradientButton } from '../../components/gradientButton';
+
 let moment = require('moment');
 
 
@@ -47,9 +48,14 @@ export class EdArticle extends React.Component {
               <RkText rkType='primary3 bigLine'>{this.data.text}</RkText>
             </View>
           </View>
-          {/* <View rkCardFooter>
-            <SocialBar/>
-          </View> */}
+          <View rkCardFooter>
+            < SocialBar/>
+          </View>
+          <GradientButton
+            text='Comments'
+            onPress={() => {
+              this.props.navigation.navigate('Comments');
+            }} />
         </RkCard>
       </ScrollView>
     )

@@ -59,7 +59,6 @@ export class SocialBar extends RkComponent {
         this.setState({shares: this.shares});
     };
 
-
     return (
       <View style={container}>
         <View style={section}>
@@ -69,7 +68,9 @@ export class SocialBar extends RkComponent {
           </RkButton>
         </View>
         <View style={section}>
-          <RkButton rkType='clear' onPress={updateComments}>
+          <RkButton rkType='clear'
+           onPress={updateComments}
+          >
             <RkText rkType='awesome hintColor' style={icon}>{FontAwesome.comment}</RkText>
             <RkText rkType='primary4 hintColor' style={label}>{comments}</RkText>
           </RkButton>

@@ -43,9 +43,15 @@ export class EducationalArticles extends React.Component {
             {/* <RkText style={styles.time}
                     rkType='secondary2 inverseColor'>{moment().add(info.item.time, 'seconds').fromNow()}</RkText> */}
           </View>
-          {/* <View rkCardFooter>
+          <View rkCardFooter>
             <SocialBar rkType='space' showLabel={true}/>
-          </View > */}
+          </View >
+
+          {/* <GradientButton
+            text='Finish'
+            onPress={() => {
+              this.props.navigation.navigate('GridV2');
+            }} /> */}
         </RkCard>
       </TouchableOpacity>
     )

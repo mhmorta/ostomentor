@@ -50,6 +50,7 @@ const DrawerRoutes = Object.keys(main).reduce((routes, name) => {
 }, {});
 
 export const AppRoutes = DrawerRoutes;
+// export const ForumRoutes = _.find(MainRoutes, {id: 'Forum'}).children;
 export const LoginRoutes = _.find(MainRoutes, {id: 'LoginMenu'}).children;
 export const NavigationRoutes = _.find(MainRoutes, {id: 'NavigationMenu'}).children;
 export const SocialRoutes = _.find(MainRoutes, {id: 'SocialMenu'}).children;
