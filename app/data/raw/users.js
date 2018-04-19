@@ -189,6 +189,23 @@ const users = [{
   followersCount: 5433,
   images: images,
   photo: require('../img/avatars/Image12.png'),
-}];
+},
+{
+  id: 12,
+  firstName: 'Assisted Living ',
+  lastName: 'Facility Questiona',
+  email: 'bgreastya@netlog.com',
+  country: 'Russia',
+  password: '0SuOdS8XQK',
+  newPassword: 'f49mZd49eGHm',
+  confirmPassword: 'f49mZd49eGHm',
+  postCount: 58,
+  phone: '7-(121)282-0448',
+  followingCount: 165,
+  followersCount: 5433,
+  images: images,
+  photo: require('../img/avatars/Image12.png'),
+}
+];
 
 export default users

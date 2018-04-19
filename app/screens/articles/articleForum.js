@@ -11,37 +11,36 @@ import {
   RkStyleSheet
 } from 'react-native-ui-kitten';
 import {data} from '../../data';
-import { SocialBar } from '../../components';
-import { GradientButton } from '../../components/gradientButton';
-
+import {Avatar} from '../../components';
+import {SocialBar} from '../../components';
 let moment = require('moment');
 
 
-export class EdArticle extends React.Component {
+export class ArticleForum extends React.Component {
   static navigationOptions = {
-    title: 'Article'.toUpperCase()
+    title: 'Forum post'.toUpperCase()
   };
 
   constructor(props) {
     super(props);
     let {params} = this.props.navigation.state;
     let id = params ? params.id : 1;
-    this.data = data.getEducationalArticle(id);
+    this.data = data.getArticle(id);
   }
 
   render() {
     return (
       <ScrollView style={styles.root}>
         <RkCard rkType='article'>
-          <Image rkCardImg source={this.data.photo}/>
+          {/* <Image rkCardImg source={this.data.photo}/> */}
           <View rkCardHeader>
             <View>
               <RkText style={styles.title} rkType='header4'>{this.data.header}</RkText>
-              {/* <RkText rkType='secondary2 hintColor'>{moment().add(this.data.time, 'seconds').fromNow()}</RkText> */}
+              <RkText rkType='secondary2 hintColor'>{moment().add(this.data.time, 'seconds').fromNow()}</RkText>
             </View>
-            {/* <TouchableOpacity onPress={() => this.props.navigation.navigate('ProfileV1', {id: this.data.user.id})}>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('ProfileV1', {id: this.data.user.id})}>
               <Avatar rkType='circle' img={this.data.user.photo}/>
-            </TouchableOpacity> */}
+            </TouchableOpacity>
           </View>
           <View rkCardContent>
             <View>
@@ -49,15 +48,8 @@ export class EdArticle extends React.Component {
             </View>
           </View>
           <View rkCardFooter>
-            < SocialBar marginBottom='5'/>
+            <SocialBar/>
           </View>
-          <GradientButton
-            marginBottom='5'
-            paddingHorizontal = '10'
-            text='Comments'
-            onPress={() => {
-              this.props.navigation.navigate('Comments');
-            }} />
         </RkCard>
       </ScrollView>
     )

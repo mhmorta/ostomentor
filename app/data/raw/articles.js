@@ -223,7 +223,60 @@ const articles = [{
   'header': 'Incorrect',
   'text': 'Unfortunately, you choose wrong answer; 2mg was correct. ',
   'comments': []
-}
+}, {
+  id: 22,
+  photo: require('../img/photo49.png'),
+  type: 'forum',
+  time: -12955,
+  header: 'Assisted Living Facility Question',
+  text: 'Recently ASG Ostomy Association of Albuquerque (OAA) became aware of a state regulation for assisted living facilities (ALF) in New Mexico, which may limit the access of ostomates for admission. The regulation considers ostomy care as requiring a higher level of continuous 24 hour nursing care and thus, inappropriate for admission unless they are capable of self-care of their ostomies. In general people seek admission to assisted living because they need help in self-care so it is difficult to understand the regulation. OAA believes that the task of emptying a pouch is related to the tasks of toileting hygiene which is a service provided by these facilities. Depending on the training of the caregivers employed they also feel that an uncomplicated change of pouch could also be managed in an ALF facility. Problems regarding the stoma or assessment for pouching issues are the venue of medical professionals.',
+  comments: []
+},
+{
+  id: 22,
+  photo: require('../img/photo49.png'),
+  type: 'forum',
+  time: -124295,
+  header: 'Ambitious Ostomate Motorcycle Ride',
+  text: 'About a year ago there was a poll on thIs Discussion Board about full-body scanning.* Given recent events, we are repeating the poll, and hope that all will take part in expressing your opinion. ',
+  comments: []
+},
+{
+  id: 23,
+  photo: require('../img/photo49.png'),
+  type: 'forum',
+  time: -129415,
+  header: 'Colostomy Poem....',
+  text: 'Colostomy bag, colostomy bag, have you any stool? \n Yes Sir, Yes Sir, two bags full \n One for the Doctor who created this here Stoma,  \nAnd one for His Mother, who lives in Oklahoma! ',
+  comments: []
+},
+{
+  id: 24,
+  photo: require('../img/photo49.png'),
+  type: 'forum',
+  time: -12905,
+  header: 'Find Cancer Support',
+  text: 'Recently, at one of our local support group meetings, there was a speaker from a local cancer support group. They do have groups all over the US, and I am sharing the national link with you all. I hope that you can find a group close to you. They offer all sorts of sessions and different support aspects that one may need.',
+  comments: []
+},
+{
+  id: 25,
+  photo: require('../img/photo49.png'),
+  type: 'forum',
+  time: -12905,
+  header: 'Stool under the wafer',
+  text: 'I am using a two piece system.I change everything every 4days.I am getting stool under the wafer on either the third or fourth day.I am wearing the device in a horizontal position and it is in a stealth bag.I am using y stops and tape to further secure everything,but the problem persists.I would appreciate any advice.',
+  comments: []
+},
+{
+  id: 26,
+  photo: require('../img/photo49.png'),
+  type: 'forum',
+  time: -2905,
+  header: 'Grumbling over weeping again',
+  text: 'I could put on stoma powder, gauze, or nothing, and it’s the old joke: with bed rest, medicine, and chicken soup, a cold will be gone in a week. Do nothing and it’ll be gone in 7 days.',
+  comments: []
+},
 ];
 
 export default articles;

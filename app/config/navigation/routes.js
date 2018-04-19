@@ -4,15 +4,6 @@ import _ from 'lodash';
 
 export const MainRoutes = [
   {
-    id: 'LoginMenu',
-    title: 'Forum',
-    icon: FontIcons.profile,
-    screen: Screens.Forum,
-    renderable: true,
-    children: [
-    ]
-  },
-  {
     id: 'ArticlesMenu',
     title: 'Articles',
     icon: FontIcons.article,
@@ -23,6 +14,15 @@ export const MainRoutes = [
     ]
   },
   {
+    id: 'LoginMenu',
+    title: 'Forum',
+    icon: FontIcons.profile,
+    screen: Screens.Forum,
+    renderable: true,
+    children: [
+    ]
+  },
+  { 
     id: 'DashboardsMenu',
     title: 'Dashboards',
     icon: FontIcons.dashboard,
@@ -311,6 +311,13 @@ export const MainRoutes = [
         id: 'EdArticle',
         title: 'Article',
         screen: Screens.EdArticle,
+        renderable: true,
+        children: []
+      },
+      {
+        id: 'ArticleForum',
+        title: 'Forum post',
+        screen: Screens.ArticleForum,
         renderable: true,
         children: []
       },
