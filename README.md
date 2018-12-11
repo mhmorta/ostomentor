@@ -1,20 +1,9 @@
-# Ostomentor
-
+# OstoMentor
+OstoMentor is an all-in-one platform for Illiostomy patients to track their stoma output, learn to take madicines with the right amount, contanct with stoma-nurses and their doctors, controling permissions over who access to their medical records, and 
 ## Key Features
-- More than 40 ready to use application screens. Currently includes:
-  - App loader
-  - Auth screens: Login/Signup/Password recovery
-  - Social screens: User profile/Profile settings/Notifications/Contacts/Feed
-  - Articles Lists & Article details
-  - Chat list/Chat details/Comments
-  - Dashboard
-  - Walkthrough
-  - Credit cards
-  - Different navigation types
-  - Settings
-- **In app theme hot reload support**!
-- Carefully crafted user experience and design
-- Clean and comprehensive codebase
+
+## Screenshots
+![](./screenshots/1.PNG =250x250))
 
 ## Made with help of
 - [react-native](https://github.com/facebook/react-native)
