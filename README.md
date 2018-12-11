@@ -3,7 +3,7 @@ OstoMentor is an all-in-one platform for Illiostomy patients to track their stom
 ## Key Features
 
 ## Screenshots
-![](./screenshots/1.PNG =250x250))
+![](./screenshots/1.PNG =250x250)
 
 ## Made with help of
 - [react-native](https://github.com/facebook/react-native)
